@@ -12,3 +12,60 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: var(--blue);
+}
+
+.cloud-row {
+  display: flex;
+}
+
+.cloud-container {
+  position: relative;
+  margin: auto;
+  display: inline-block;
+}
+
+.cloud-segment {
+  position: absolute;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.lg-cloud {
+  width: 11em;
+  height: 11em;
+}
+
+.md-cloud {
+  width: 8em;
+  height: 8em;
+}
+
+.sm-cloud {
+  width: 5em;
+  height: 5em;
+}
+
+.left-cloud,
+.right-cloud {
+  top: 33%;
+  height: 35%;
+  width: 35%;
+}
+
+.left-cloud {
+  left: 8%;
+}
+
+.right-cloud {
+  left: 52%;
+}
+
+.center-cloud {
+  top: 20%;
+  left: 25%;
+  height: 55%;
+  width: 45%;
+}
