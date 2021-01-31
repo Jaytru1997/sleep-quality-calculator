@@ -1,7 +1,7 @@
 # Sleep Quality Calculator by Junior Developer Group
 
 ## Introduction:
-Finding out the benefits and side effects of poor sleep quality to compliment our Sleep Quality Calculator and additional resources where one can find help or further answers. 
+Learn about the benefits and side effects of poor sleep quality, calculate your own sleep quality score and share additional resources where one can find help or further answers. 
 
 ## TECHNOLOGY AND LANGUAGES USED:
 This project is using vanilla HTML, CSS and JavaScript. There might be an additional library used later on,  but that must be a team decision. 
