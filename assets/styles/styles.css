@@ -19,53 +19,50 @@ body {
 
 .cloud-row {
   display: flex;
+  justify-content: space-between;
 }
 
-.cloud-container {
-  position: relative;
-  margin: auto;
-  display: inline-block;
+.lg-cloud,
+.md-cloud,
+.sm-cloud {
+  padding: 0 4em;
+  background-repeat: no-repeat;
 }
 
-.cloud-segment {
-  position: absolute;
-  background-color: var(--white);
-  border-radius: 50%;
-}
-
-.lg-cloud {
-  width: 11em;
-  height: 11em;
-}
-
-.md-cloud {
-  width: 8em;
-  height: 8em;
+.md-cloud,
+.sm-cloud {
+  width: 10em;
+  height: 10em;
 }
 
 .sm-cloud {
-  width: 5em;
-  height: 5em;
+  background: radial-gradient(
+      5em 5em at 50% 50%,
+      var(--white) 42%,
+      transparent 50%
+    ),
+    radial-gradient(3.5em 3.5em at 37% 55%, var(--white) 40%, transparent 50%),
+    radial-gradient(3.5em 3.5em at 62% 55%, var(--white) 40%, transparent 50%);
 }
 
-.left-cloud,
-.right-cloud {
-  top: 33%;
-  height: 35%;
-  width: 35%;
+.md-cloud {
+  background: radial-gradient(
+      7em 7em at 50% 50%,
+      var(--white) 45%,
+      transparent 50%
+    ),
+    radial-gradient(5em 5em at 35% 55%, var(--white) 45%, transparent 50%),
+    radial-gradient(5em 5em at 65% 55%, var(--white) 45%, transparent 50%);
 }
 
-.left-cloud {
-  left: 8%;
-}
-
-.right-cloud {
-  left: 52%;
-}
-
-.center-cloud {
-  top: 20%;
-  left: 25%;
-  height: 55%;
-  width: 45%;
+.lg-cloud {
+  background: radial-gradient(
+      11em 11em at 50% 50%,
+      var(--white) 45%,
+      transparent 50%
+    ),
+    radial-gradient(7.5em 7.5em at 30% 55%, var(--white) 45%, transparent 50%),
+    radial-gradient(7.5em 7.5em at 70% 55%, var(--white) 45%, transparent 50%);
+  width: 15em;
+  height: 15em;
 }
