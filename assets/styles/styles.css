@@ -27,22 +27,22 @@ body {
   flex-wrap:wrap;
   justify-content:center;
   color:var(--white);
-  font-size:20px;
-  letter-spacing: 2px;
-  margin: 30px 80px;
-  line-height: 30px;;
+  font-size:1.5em;
+  letter-spacing: 0.1em;
+  margin: 1.8em 4em;
+  line-height: 1.8em;
 
 }
 
 .introduction h1{
-  font-size:40px;
-  margin-bottom:40px;
+  font-size: 2em;
+  margin-bottom:1.5em;
 }
 .calculate_score_button{
-  margin-top:30px;
-  padding:20px;
-  font-size:18px;
-  border-radius: 10px;
+  margin-top:1.8em;
+  padding:1em;
+  font-size:1em;
+  border-radius: 0.5em;
 }
 
 h2 {
