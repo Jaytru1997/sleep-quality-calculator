@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      property="og:title"
-      content="Sleep Quality Calculator - Evaluate and improve your sleep!"
-    />
-    <meta
-      property="og:description"
-      content="Learn about the health benefits of getting a full night's sleep! Reflect on your habits using our sleep calculator, then browse our tips and resources for information on how you can sleep better"
-    />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Sleep Quality Calculator - Evaluate and improve your sleep!" />
+  <meta property="og:description"
+    content="Learn about the health benefits of getting a full night's sleep! Reflect on your habits using our sleep calculator, then browse our tips and resources for information on how you can sleep better" />
 
-    <title>Sleep Quality Calculator</title>
-  </head>
-  <body>
-    <main>
-      <section>
-        <figure id="clouds">
-          <div aria-describedby="cloud-description">
-            <div class="cloud-row"></div>
-            <div class="cloud-row"></div>
-            <div class="cloud-row"></div>
-            <div class="cloud-row"></div>
-          </div>
-          <figcaption id="cloud-description" hidden="true">
-            Cartoon clouds
-          </figcaption>
-        </figure>
-      </section>
-      <section id="sleep-score">
-        <h2>Calculate your sleep score</h2>
-        <div id="calculator"></div>
-      </section>
-    </main>
-  </body>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/styles/styles.css" />
 
-  <!-- Scripts -->
-  <script src="./assets/scripts/index.js"></script>
-  <script src="./assets/scripts/cloud.js"></script>
-  <script src="./assets/scripts/calculator.js"></script>
+  <title>Sleep Quality Calculator</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="cloud-row"></div>
+      <div class="cloud-row"></div>
+
+      <div class="introduction">
+        <h1>Improving the Quality of Sleep</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quibusdam delectus consequatur ab nihil quis
+          beatae doloribus, voluptatum fuga reprehenderit laboriosam ut obcaecati cupiditate similique veritatis
+          blanditiis labore. Perspiciatis, ducimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+          quibusdam delectus consequatur ab nihil quis
+          beatae doloribus, voluptatum fuga reprehenderit laboriosam ut obcaecati cupiditate similique veritatis
+          blanditiis labore. Perspiciatis, ducimus</p>
+        <button class="calculate_score_button">Calculate Your Sleep Score.</button>
+      </div>
+
+      <div class="cloud-row"></div>
+      <div class="cloud-row"></div>
+    </section>
+    <section id="sleep-score">
+      <h2>Calculate your sleep score</h2>
+      <div id="calculator"></div>
+    </section>
+  </main>
+</body>
+
+<!-- Scripts -->
+<script src="./assets/scripts/index.js"></script>
+<script src="./assets/scripts/cloud.js"></script>
+<script src="./assets/scripts/calculator.js"></script>
+
 </html>
