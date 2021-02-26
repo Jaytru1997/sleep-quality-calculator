@@ -27,16 +27,26 @@ body {
   flex-wrap:wrap;
   justify-content:center;
   color:var(--white);
-  font-size:1.5em;
+  font-size:1.3em;
   letter-spacing: 0.1em;
   margin: 1.8em 4em;
   line-height: 1.8em;
-
 }
-
 .introduction h1{
   font-size: 2em;
   margin-bottom:1.5em;
+}
+.introduction p{
+  margin:0.2em;
+
+}
+.introduction b{
+  font-size: 1.3em;
+}
+.introduction a{
+
+  color:var(--white);
+
 }
 .calculate_score_button{
   margin-top:1.8em;
