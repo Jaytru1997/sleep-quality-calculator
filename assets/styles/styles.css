@@ -52,6 +52,69 @@ body {
 
 }
 
+#sleep-benefits {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 8em;
+}
+#sleep-benefits h2 {
+  font-size: 1.8em;
+}
+
+.sleep-benefits__image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+}
+.sleep-benefits__image img {
+  height: 25em;
+  width:  35em;
+  border: 2px solid var(--white);
+}
+
+.sleep-benefits__introduction {
+  width: 50%;
+  padding: 2em;
+}
+
+.sleep-benefits__introduction p {
+  color: var(--white);
+  font-size: 1.2em;
+  margin-top: 1em;
+  line-height: 1.4em;
+}
+.sleep-benefits__list {
+  width: 40em;
+  margin-top: 2em;
+}
+
+.sleep-benefits__list summary {
+  color: var(--white);
+  margin: 0.8em;
+  font-size: 1.5em;
+  outline: none;
+}
+
+.sleep-benefits__list details {
+  color: var(--white);
+  line-height: 1.4em;
+  font-size: 1em;
+}
+.sleep-benefits__list details[open] {
+ padding: 0.5em;
+}
+
+.sleep-benefits__list span {
+color: var(--white);
+font-size: 0.7em;
+}
+.sleep-benefits__list a  {
+color: var(--white);
+font-size: 0.9em;
+}
+
 
 h2 {
   color: var(--light-pink);
@@ -180,4 +243,13 @@ h2 {
     );
   width: 15em;
   height: 15em;
+}
+
+@media (max-width: 1200px) {
+  .sleep-benefits__image {
+    display: none;
+  }
+  .sleep-benefits__introduction {
+    width: 80%;
+  }
 }
