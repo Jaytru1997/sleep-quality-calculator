@@ -52,13 +52,13 @@ body {
 
 }
 
-.sleep-benefits {
+#sleep-benefits {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 8em;
 }
-.sleep-benefits h2 {
+#sleep-benefits h2 {
   font-size: 1.8em;
 }
 
