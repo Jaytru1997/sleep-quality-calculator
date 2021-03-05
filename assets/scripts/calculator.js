@@ -113,7 +113,13 @@ function postScore() {
 }
 
 function calculateScore() {
-  return 32 - sleepScore;
+  let scorePercentage = (sleepScore / 32) * 100;
+  if (scorePercentage % 1 < 0.5) {
+    scorePercentage = Math.floor(scorePercentage);
+  } else {
+    scorePercentage = Math.ceil(scorePercentage);
+  }
+  return `${scorePercentage}%`;
 }
 
 function updateCalculator() {
@@ -149,7 +155,7 @@ function removeLastQuestion() {
 }
 
 function setAnswers(answerList) {
-  let answerValue = 0;
+  let answerValue = 4;
   answerList.forEach((answer) => {
     let radioContainer = document.createElement('div');
     radioContainer.classList.add('answer-container');
@@ -174,7 +180,7 @@ function setAnswers(answerList) {
     radioContainer.appendChild(label);
     form.appendChild(radioContainer);
 
-    answerValue += 1;
+    answerValue -= 1;
   });
 }
 
