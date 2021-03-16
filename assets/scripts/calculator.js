@@ -19,6 +19,7 @@ let firstPara = document.createElement('p');
 sectionStructure.appendChild(firstPara);
 
 let secondPara = document.createElement('p');
+secondPara.classList.add('calculator-spacing');
 secondPara.textContent = `Not sure if you answered correctly? Reset the calculator and try again!`;
 secondPara.style.display = 'none';
 
