@@ -18,24 +18,37 @@
 }
 
 body {
+  color: var(--white);
   background-color: var(--blue);
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+}
+
+h2 {
+  color: var(--light-pink);
+  text-transform: uppercase;
+  font-weight: 700;
+
+  text-shadow: 0.05em 0.05em 0.25em var(--dark-grey);
+}
+
+a {
+  color: var(--white);
 }
 
 .introduction {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  color: var(--white);
-  font-size: 1.3em;
+  font-size: 1em;
   letter-spacing: 0.1em;
-  margin: 1.8em 4em;
-  line-height: 1.8em;
+  margin: 1.8em 2em;
+  line-height: 1.5em;
 }
 .introduction h1 {
   font-size: 2em;
-  margin-bottom: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
   width: 100%;
   text-align: center;
 }
@@ -44,11 +57,9 @@ body {
   width: 100%;
 }
 .introduction b {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
-.introduction a {
-  color: var(--white);
-}
+
 .calculate_score_button {
   margin: auto;
   padding: 1em;
@@ -64,51 +75,52 @@ body {
 
 #sleep-benefits {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 8em;
+  margin-top: 1em;
 }
 #sleep-benefits h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .sleep-benefits__image {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 50%;
 }
 .sleep-benefits__image img {
-  height: 25em;
-  width: 35em;
-  border: 2px solid var(--white);
+  width: 100%;
+  height: auto;
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.sleep-benefits__introduction,
+.sleep-benefits__list {
+  width: 80%;
 }
 
 .sleep-benefits__introduction {
-  width: 50%;
   padding: 2em;
 }
 
 .sleep-benefits__introduction p {
-  color: var(--white);
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 1em;
   line-height: 1.4em;
 }
 .sleep-benefits__list {
-  width: 40em;
   margin-top: 2em;
 }
 
 .sleep-benefits__list summary {
-  color: var(--white);
   margin: 0.8em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   outline: none;
 }
 
 .sleep-benefits__list details {
-  color: var(--white);
   line-height: 1.4em;
   font-size: 1em;
 }
@@ -116,29 +128,12 @@ body {
   padding: 0.5em;
 }
 
-.sleep-benefits__list span {
-  color: var(--white);
-  font-size: 0.7em;
-}
-.sleep-benefits__list a {
-  color: var(--white);
-  font-size: 0.9em;
-}
-
-h2 {
-  color: var(--light-pink);
-  text-transform: uppercase;
-  font-weight: 700;
-
-  text-shadow: 0.05em 0.05em 0.25em var(--dark-grey);
-}
-
 #sleep-score {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 2em;
+  margin: 0 2em 2em;
 }
 
 #calculator-wrapper {
@@ -146,26 +141,36 @@ h2 {
   background: var(--light-grey);
   color: var(--black);
 
-  margin: 1em;
+  margin: 1em 0;
   padding: 3em;
   border-radius: 1em;
 
   width: 60%;
-  height: 20em;
+  height: 28em;
 }
 
 #calculator {
   position: absolute;
   top: 0.25em;
-  left: 1.25em;
-  width: 85%;
-  height: 75%;
+  left: 0.25em;
+  width: 55%;
+  height: 80%;
 
   margin: 1em;
   padding: 2em;
 
   border: 0.15em solid var(--grey);
   border-radius: 0.75em;
+}
+
+#calculator h3 {
+  font-size: 0.9em;
+}
+
+#calculator p,
+#calculator form,
+#calculator form #button-container .calculator-button {
+  font-size: 0.8em;
 }
 
 #calculator p {
@@ -190,7 +195,7 @@ h2 {
 }
 
 #calculator form #button-container .calculator-button {
-  margin: 1em 0 0;
+  margin: 1.5em 0 0;
   padding: 1em;
 
   width: 40%;
@@ -199,11 +204,6 @@ h2 {
 
 #calculator p.calculator-spacing {
   margin-bottom: 6em;
-}
-
-#sleep-score small,
-#sleep-score a {
-  color: var(--white);
 }
 
 .cloud-row {
@@ -280,7 +280,45 @@ h2 {
   height: 15em;
 }
 
+@media screen and (min-width: 20em) {
+  #calculator-wrapper {
+    height: 25em;
+  }
+
+  #calculator {
+    left: 1em;
+    height: 75%;
+  }
+}
+
 @media screen and (min-width: 43em) {
+  #sleep-benefits {
+    flex-direction: row;
+  }
+
+  .sleep-benefits__image,
+  .sleep-benefits__introduction {
+    width: 50%;
+  }
+
+  .sleep-benefits__image {
+    padding: 2em 0 0;
+  }
+
+  .sleep-benefits__image img {
+    width: 20em;
+    height: 12em;
+    border: 2px solid var(--white);
+  }
+
+  #calculator-wrapper {
+    height: 20em;
+  }
+
+  #calculator {
+    width: 75%;
+  }
+
   .sm-cloud {
     background: radial-gradient(
         4.5em 4.5em at 50% 50%,
@@ -339,6 +377,47 @@ h2 {
 }
 
 @media screen and (min-width: 62em) {
+  .introduction,
+  .introduction b,
+  .sleep-benefits__introduction p,
+  #calculator p,
+  #calculator form,
+  .sleep-benefits__list details,
+  small {
+    font-size: 1.3em;
+  }
+
+  #sleep-benefits h2 {
+    font-size: 1.8em;
+  }
+
+  .sleep-benefits__introduction {
+    padding: 2em;
+  }
+
+  .sleep-benefits__list summary,
+  #calculator h3 {
+    font-size: 1.5em;
+  }
+
+  .sleep-benefits__list summary {
+    line-height: 1.4em;
+  }
+
+  #calculator-wrapper {
+    height: 25em;
+  }
+
+  #calculator {
+    width: 80%;
+    height: 78%;
+  }
+
+  #calculator form #button-container .calculator-button {
+    height: 3em;
+    font-size: 1em;
+  }
+
   .sm-cloud {
     background: radial-gradient(
         5em 5em at 50% 50%,
@@ -397,6 +476,76 @@ h2 {
 }
 
 @media screen and (min-width: 75em) {
+  .introduction,
+  .sleep-benefits__introduction p,
+  #calculator p,
+  #calculator form,
+  .sleep-benefits__list details {
+    font-size: 1em;
+  }
+
+  small {
+    font-size: 0.8em;
+  }
+
+  .introduction {
+    margin: 1.8em 4em;
+    line-height: 1.8em;
+  }
+  .introduction h1 {
+    margin-bottom: 1.5em;
+  }
+
+  #sleep-benefits {
+    flex-direction: row;
+    margin-top: 8em;
+  }
+
+  .sleep-benefits__image {
+    padding: 2em 0 0;
+  }
+
+  .sleep-benefits__image img {
+    height: 25em;
+    width: 35em;
+    border: 2px solid var(--white);
+  }
+
+  .sleep-benefits__introduction {
+    width: 50%;
+  }
+
+  .sleep-benefits__introduction p {
+    font-size: 1.2em;
+  }
+  .sleep-benefits__list {
+    width: 40em;
+  }
+
+  #sleep-score {
+    margin: 0 0 2em;
+  }
+
+  #calculator-wrapper {
+    height: 20em;
+  }
+
+  #calculator {
+    left: 1.25em;
+    width: 85%;
+    height: 75%;
+  }
+
+  #calculator p,
+  #calculator form {
+    font-size: 1em;
+  }
+
+  #calculator form #button-container .calculator-button {
+    margin: 1em 0 0;
+    height: 4em;
+  }
+
   .sm-cloud {
     background: radial-gradient(
         5em 5em at 50% 50%,
@@ -451,12 +600,5 @@ h2 {
       );
     width: 15em;
     height: 15em;
-  }
-
-  .sleep-benefits__image {
-    display: none;
-  }
-  .sleep-benefits__introduction {
-    width: 80%;
   }
 }
