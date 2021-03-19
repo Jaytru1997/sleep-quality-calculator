@@ -25,7 +25,7 @@
         <div class="cloud-row"></div>
         <div class="cloud-row"></div>
 
-        <article class="introduction">
+        <div class="introduction">
           <h1>Improving the Quality of Sleep</h1>
           <p>
             <b>Are you getting enough sleep? Are you getting quality sleep? </b>
@@ -73,7 +73,7 @@
           <button class="calculate_score_button">
             Calculate Your Sleep Score.
           </button>
-        </article>
+        </div>
         <div class="cloud-row"></div>
         <div class="cloud-row"></div>
         <article id="sleep-benefits">
@@ -138,21 +138,123 @@
                 sleep-deprived messes with the hormones in your brain -- leptin
                 and ghrelin -- that control appetite.
               </details>
-              <small>
+              <span>
                 * You can find the original article
                 <a
                   href="https://www.webmd.com/sleep-disorders/benefits-sleep-more"
-                >
-                  here</a
-                ></small
+                  >here</a
+                ></span
               >
             </div>
           </div>
         </article>
       </section>
+      <section id="side-effects">
+        <div class="side-effects-intro">
+          <h1>Side effects of poor sleep quality.</h1>
+          <p>
+            The effects of poor sleep can be serious and far-reaching.The
+            long-term effects of sleep deprivation are proven. It drains your
+            mental abilities and puts your physical health at real risk. Science
+            has linked poor slumber with a number of health problems, from
+            weight gain to a weakened immune system.
+          </p>
+          <span>
+            * You can find the original articles and read more about it
+            <a
+              href="https://www.healthline.com/health/sleep-deprivation/effects-on-body"
+            >
+              here</a
+            >
+            and <a href="https://www.sleepfoundation.org/"> here</a></span
+          >
+        </div>
+        <div class="grid-container">
+          <div class="col-1-row-1-item-1">
+            <h4>Difficulty concentrating and staying alert.</h4>
+            <p>
+              When you are suffereing from a lack of sleep you will find it hard
+              to concentrate on things like work and even simple tasks. You may
+              feel tired during the day or when performing activities such as
+              driving which can put yourself and others at risk.
+            </p>
+          </div>
+
+          <div class="col-2-row-1-item-2">
+            <h4>Memory issues</h4>
+            <p>
+              During sleep, the brain forms connections and helps you process
+              and remember new things. A lack of sleep can hinder ths process
+              and impact both your long and short term memory.
+            </p>
+          </div>
+
+          <div class="col-3-row-1-item-3">
+            <h4>More Accident prone.</h4>
+            <p>
+              Being drowsy can increase your risk of accidents either from being
+              to tired too concentrate and respond to stimulus ie. driving a
+              car, or you may be prone to take more risks, as you arent able to
+              asses the situation properly. A lack of sleep can also affect your
+              balance and coordination which again may make you more prone to
+              accidents.
+            </p>
+          </div>
+
+          <div class="col-1-row-2-item-1">
+            <h4>Feeling irritable and moody.</h4>
+            <p>
+              A lack of sleep can make you, moody , emotional and short
+              tempered.
+            </p>
+          </div>
+          <div class="side-effects-image">
+            <img src="./assets/images/tiredWorker.svg" />
+          </div>
+          <div class="col-3-row-2-item-3">
+            <h4>Overeating</h4>
+            <p>
+              The chemicals which signal to your brain that you are full are
+              affected by lack of sleep, which is just one of several ways that
+              poor sleep may be tied to obesity and problems with maintaining a
+              healthy weight.
+            </p>
+          </div>
+
+          <div class="col-1-row-3-item-1">
+            <h4>Immunodeficieny</h4>
+            <p>
+              Sleep deficiency has been shown to lead to worsened immune
+              function, making you more suceptable to getting illnesses,
+              including a poorer response to vaccines.
+            </p>
+          </div>
+          <div class="col-2-row-3-item-2">
+            <h4>Other Health Risks</h4>
+            <p>
+              <b>The cardiovascular system: </b> Lack of sleep may lead to
+              increased blood pressure and higher levels of inflammation and
+              increases your risk of cardiovascular disease.
+            </p>
+            <p>
+              <b>Diabetes: </b> Lack of sleep efects the bodys release of
+              insulin.People who do not get enough sleep have higher blood sugar
+              levels and an increased risk of Type 2 diabetes.
+            </p>
+            <p>
+              <b>Mental health disorders: </b>
+              Sleep and mental health are closely intertwined, and poor sleep
+              has strong associations with conditions like depression, anxiety,
+              and bipolar disorder.
+            </p>
+          </div>
+        </div>
+      </section>
       <section id="sleep-score">
         <h2>Calculate your sleep score</h2>
-        <div id="calculator-wrapper"><div id="calculator"></div></div>
+        <div id="calculator-wrapper">
+          <div id="calculator"></div>
+        </div>
         <small
           >Calculator questions are from the
           <a
@@ -168,4 +270,7 @@
   <script src="./assets/scripts/index.js"></script>
   <script src="./assets/scripts/cloud.js"></script>
   <script src="./assets/scripts/calculator.js"></script>
+  <script>
+    console.log(window.innerWidth);
+  </script>
 </html>
