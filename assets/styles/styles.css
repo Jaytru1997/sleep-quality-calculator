@@ -128,10 +128,6 @@ a {
   padding: 0.5em;
 }
 
-.sleep-benefits__list span {
-  color: var(--white);
-  font-size: 0.7em;
-}
 .sleep-benefits__list a {
   color: var(--white);
   font-size: 0.9em;
@@ -149,19 +145,15 @@ a {
   font-size: 1.5em;
 }
 .side-effects-intro {
-  padding: 2em;
+  padding: 2em 2em 1em 2em;
   width: 80%;
 }
 
 .side-effects-intro p {
   font-size: 1em;
   margin-top: 1em;
+  margin-bottom:1em;
   line-height: 1.4em;
-}
-
-.side-effects span {
-  color: var(--white);
-  font-size: 0.7em;
 }
 .side-effects a {
   color: var(--white);
@@ -171,23 +163,24 @@ a {
 .grid-container{
   width:80%;
   height:auto;
-  padding:2em;
+  padding:1em 2em 2em 2em;
   display: grid;
   grid-template-rows: 1fr;
-  /* border: 1px solid white; */
+
 }
 .grid-item{
-
 color: var(--white);
 padding: 1rem;
 height: auto;
 max-width:100%;
-/* border: 1px solid white; */
+align-items:flex-start;
+
 
 }
 .grid-item p{
-padding:0.8em;
+padding:0.8em 0;
 font-size: 1em;
+
 }
 .grid-item img{
   width: 100%;
@@ -387,11 +380,19 @@ h2 {
   }
 
 
-   .side-effects-intro {
-    padding: 3em;
+  .side-effects-intro {
+    padding: 3em 3em 2em 3em;
     align-self:flex-start;
-  } 
-
+  }
+  
+  .grid-container{
+   padding:1em 2em 2em 2em;
+  }
+.grid-item p{
+  padding:0.8em 0;
+  font-size: 1em;
+  
+  }
   #calculator-wrapper {
     height: 20em;
   }
@@ -488,17 +489,18 @@ h2 {
     font-size: 1.8em;
   }
   .side-effects-intro {
-    padding: 2em;
+    padding: 2em 2em 1em 2em;
     text-align:center;
     align-self: center;
   }
   .side-effects, .side-effects-intro p{
     font-size: 1.2em;
   }
+
   .grid-container {
     width: 100%;
     height: auto;
-    padding: 2em 2em;
+    padding: 1em 2em 2em 2em;
     color: var(--white);
     display: grid;
     align-content: center;
