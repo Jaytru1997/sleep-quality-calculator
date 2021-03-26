@@ -402,8 +402,7 @@ h2 {
   .grid-container {
     padding: 1em 2em 2em 2em;
   }
-  .grid-item p,
-  .top-tips-item p {
+  .grid-item p {
     padding: 0.8em 0;
     font-size: 1em;
   }
@@ -478,8 +477,7 @@ h2 {
   .sleep-benefits__introduction p,
   #calculator p,
   #calculator form,
-  .sleep-benefits__list details,
-  small {
+  .sleep-benefits__list details {
     font-size: 1.3em;
   }
 
@@ -509,7 +507,10 @@ h2 {
     align-self: center;
   }
   .side-effects,
-  .side-effects-intro p {
+  .side-effects-intro p,
+  .improve-sleep-quality h3,
+  .improve-sleep-quality h4,
+  .improve-sleep-quality p{
     font-size: 1.2em;
   }
 
