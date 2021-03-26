@@ -186,6 +186,10 @@ a {
   height: auto;
 }
 
+.top-tips-item {
+  padding: 1em 0;
+}
+
 h2 {
   color: var(--light-pink);
   text-transform: uppercase;
@@ -212,7 +216,7 @@ h2 {
   border: 0.15em solid var(--grey);
   border-radius: 0.75em;
 
-  width: 60%;
+  width: 65%;
 }
 
 .improve-sleep-quality h3 {
