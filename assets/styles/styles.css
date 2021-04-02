@@ -62,8 +62,12 @@ a {
 
 .calculate_score_button {
   margin: auto;
+  text-decoration:none;
+  background-color:var(--white);
+  color:var(--black);
   padding: 1em;
   font-size: 1em;
+  font-weight:00;
   border-radius: 0.5em;
   transition: background-color 0.5s ease;
 }
