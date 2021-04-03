@@ -27,6 +27,8 @@ body {
   background-color: var(--blue);
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+
+  width: 100%;
 }
 
 h2 {
@@ -68,8 +70,12 @@ a {
 
 .calculate_score_button {
   margin: auto;
+  text-decoration:none;
+  background-color:var(--white);
+  color:var(--black);
   padding: 1em;
   font-size: 1em;
+  font-weight:00;
   border-radius: 0.5em;
   transition: background-color 0.5s ease;
 }
@@ -286,6 +292,7 @@ a {
 #resource-wrapper {
   display: flex;
   flex-direction: column;
+
   background: url('../images/sky-large.jpg') no-repeat;
 
   margin: 2em 0;
