@@ -392,13 +392,14 @@ font-weight:bold;
   border-radius:0.3em;
   background-color:var(--blue);
   padding: 1.7em;   
-  width:50%;
-  font-size:0.8em;
+  width:60%;
+  font-size:0.6em;
+  margin:auto; 
 }
 .modal-content h2{
   width:100%;
   text-align:center;
-margin-bottom:1em;
+  margin-bottom:1em;
   
 }
 .modal-content h3{
@@ -427,8 +428,6 @@ text-align:left;
 .modal-content a:hover{
 font-weight:bold;
 }
-
-
 .close {
   width:50%;
   color: var(--white); 
@@ -751,6 +750,7 @@ font-weight:bold;
   }
   .modal-content{
     margin: auto; 
+    font-size:0.8em;
   }
 
   .sm-cloud {
@@ -936,6 +936,7 @@ font-weight:bold;
   
   .modal-content{
   margin: auto; 
+  font-size:0.8em;
   }
 
   .sm-cloud {
