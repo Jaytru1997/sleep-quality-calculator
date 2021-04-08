@@ -903,6 +903,6 @@ footer p a {
     height: 15em;
   }
 }
-#calculate-sleep {
+.calculate_sleep_button {
   padding-bottom: 2rem;
 }
