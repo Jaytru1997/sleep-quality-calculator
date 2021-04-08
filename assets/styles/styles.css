@@ -396,8 +396,15 @@ font-weight:bold;
   font-size:0.6em;
   margin:auto; 
 }
+.closing{
+display:flex;
+width:100%;
+align-items: flex-end;
+justify-content:flex-end;
+text-align:right;
+}
 .modal-content h2{
-  width:100%;
+  width:50%;
   text-align:center;
   margin-bottom:1em;
   
@@ -406,11 +413,7 @@ font-weight:bold;
 width:100%;
 text-align:left;
 }
-.modal-content span{
-  width:100%;
-  margin-left:94%;
-  
-}
+
 .modal-content p{
   text-align:left;
   line-height:1.8em;
