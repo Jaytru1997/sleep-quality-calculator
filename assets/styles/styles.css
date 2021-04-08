@@ -28,7 +28,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 
-  width: 100%;
+  max-width: 100%;
 }
 
 h2 {
@@ -70,12 +70,12 @@ a {
 
 .calculate_score_button {
   margin: auto;
-  text-decoration:none;
-  background-color:var(--white);
-  color:var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--black);
   padding: 1em;
   font-size: 1em;
-  font-weight:00;
+  font-weight: 00;
   border-radius: 0.5em;
   transition: background-color 0.5s ease;
 }
@@ -149,6 +149,8 @@ a {
   justify-content: center;
   align-content: center;
   margin-top: 1em;
+
+  width: 90%;
 }
 
 .side-effects-intro {
@@ -363,6 +365,7 @@ footer p a {
 .cloud-row {
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
 }
 
 .lg-cloud,
