@@ -810,10 +810,12 @@ footer p a {
     position: relative;
   }
   #col-2-row-3-item-2 {
-    justify-self: center;
+    justify-self: end;
     align-self: center;
     text-align: center;
     grid-column: auto / span 2;
+    width: 53%;
+    
   }
   #sleep-score {
     margin: 0 0 2em;
