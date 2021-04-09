@@ -1002,3 +1002,6 @@ font-weight:bold;
     height: 15em;
   }
 }
+.calculate_sleep_button {
+  padding-bottom: 2rem;
+}
