@@ -188,8 +188,10 @@ a {
   font-size: 1em;
 }
 .grid-item img {
-  width: 100%;
-  height: auto;
+  height: 200px;
+  width: 200px;
+  border: 0.25em var(--white) solid;
+  border-radius: 100%;
 }
 
 #sleep-score {
@@ -885,8 +887,10 @@ font-weight:bold;
     text-align: center;
   }
   .grid-item img {
-    height: auto;
-    width: auto;
+    height: 400px;
+    width: 400px;
+    border: 0.25em var(--white) solid;
+    border-radius: 100%;
   }
 
   .grid-container {
