@@ -809,11 +809,11 @@ footer p a {
     gap: 0.5em 0.5em;
     position: relative;
   }
-  #col-2-row-3-item-3 {
+  #col-3-row-3-item-3 {
     justify-self: center;
     align-self: center;
     text-align: center;
-    grid-column: auto;
+    grid-column: 3/ span 1;
     
   }
   #sleep-score {
