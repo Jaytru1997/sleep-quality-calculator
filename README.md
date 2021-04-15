@@ -14,9 +14,12 @@ This project is using vanilla HTML, CSS and JavaScript. There might be an additi
 At the moment we're using a discord server. As we grow I'd like to switch to a different platform but we will decide as a group when the time comes. For now you can join us by visiting this invite link here: https://discord.com/invite/HgFaYYADRC
 
 ## Tickets:
-You can find all available tickets on our Trello board
-(to access Trello you must be a member on Discord)
+You can find all available tickets on our Jira board
+(to access Trello you must be a member on Discord and WONDR).
 
 ## Communication: 
 On project's channel within our Discord group
-(see the link above)
+(see the link above).
+
+##Chapter Lead:
+Our chapter leads for this project are Denice and Cendei.
