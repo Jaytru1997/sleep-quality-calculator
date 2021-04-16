@@ -150,8 +150,14 @@ a {
   align-content: center;
   margin-top: 1em;
 
-  width: 90%;
+  /* width: 90%; */
 }
+
+.side-effects-intro h2,
+#improve-sleep-quality h2 {
+  font-size: 1.5em;
+}
+
 .side-effects-intro {
   padding: 2em 2em 1em 2em;
   width: 80%;
@@ -176,7 +182,8 @@ a {
   display: grid;
   grid-template-rows: 1fr;
 }
-.grid-item {
+.grid-item,
+.top-tips-item {
   color: var(--white);
   padding: 1rem;
   height: auto;
@@ -192,7 +199,12 @@ a {
   height: auto;
 }
 
-#sleep-score {
+.top-tips-item {
+  padding: 1em 0;
+}
+
+#sleep-score,
+#improve-sleep-quality {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -706,7 +718,10 @@ footer span:hover {
     align-self: center;
   }
   .side-effects,
-  .side-effects-intro p {
+  .side-effects-intro p,
+  .improve-sleep-quality h3,
+  .improve-sleep-quality h4,
+  .improve-sleep-quality p {
     font-size: 1.2em;
   }
 
@@ -892,7 +907,8 @@ footer span:hover {
   }
 
   .side-effects,
-  .side-effects-intro p {
+  .side-effects-intro p,
+  .improve-sleep-quality p {
     font-size: 1.2em;
   }
   .side-effects-intro {
