@@ -188,8 +188,8 @@ a {
   font-size: 1em;
 }
 .grid-item img {
-  height: 200px;
-  width: 200px;
+  height: 12.5em;
+  width: 12.5em;
   border: 0.25em var(--white) solid;
   border-radius: 100%;
 }
@@ -887,8 +887,8 @@ font-weight:bold;
     text-align: center;
   }
   .grid-item img {
-    height: 400px;
-    width: 400px;
+    height: 25em;
+    width: 25em;
     border: 0.25em var(--white) solid;
     border-radius: 100%;
   }
