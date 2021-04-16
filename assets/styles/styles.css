@@ -5,6 +5,7 @@
   --light-grey: #e7e7e7;
   --grey: #c4c4c4;
   --dark-grey: #192734;
+  --grey-transparent: rgba(31.8, 43.5, 63.9, 0.4);
   --white: #f5f5f5;
   --light-pink: #efdfdf;
   --light-green: #ccddcc;
@@ -17,17 +18,24 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--white);
   background-color: var(--blue);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+
+  width: 100%;
 }
 
 h2 {
   color: var(--light-pink);
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 1.5em;
 
   text-shadow: 0.05em 0.05em 0.25em var(--dark-grey);
 }
@@ -62,8 +70,12 @@ a {
 
 .calculate_score_button {
   margin: auto;
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--black);
   padding: 1em;
   font-size: 1em;
+  font-weight: 00;
   border-radius: 0.5em;
   transition: background-color 0.5s ease;
 }
@@ -79,9 +91,6 @@ a {
   justify-content: center;
   align-content: center;
   margin-top: 1em;
-}
-#sleep-benefits h2 {
-  font-size: 1.5em;
 }
 
 .sleep-benefits__image {
@@ -140,10 +149,8 @@ a {
   justify-content: center;
   align-content: center;
   margin-top: 1em;
-}
-.side-effects-intro h2,
-#improve-sleep-quality h2 {
-  font-size: 1.5em;
+
+  width: 90%;
 }
 .side-effects-intro {
   padding: 2em 2em 1em 2em;
@@ -169,8 +176,7 @@ a {
   display: grid;
   grid-template-rows: 1fr;
 }
-.grid-item,
-.top-tips-item {
+.grid-item {
   color: var(--white);
   padding: 1rem;
   height: auto;
@@ -186,20 +192,7 @@ a {
   height: auto;
 }
 
-.top-tips-item {
-  padding: 1em 0;
-}
-
-h2 {
-  color: var(--light-pink);
-  text-transform: uppercase;
-  font-weight: 700;
-
-  text-shadow: 0.05em 0.05em 0.25em var(--dark-grey);
-}
-
-#sleep-score,
-#improve-sleep-quality {
+#sleep-score {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,9 +286,179 @@ h2 {
   margin-bottom: 6em;
 }
 
+#resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 3em 0;
+}
+
+#resources h2 {
+  margin: 0 1.5em;
+}
+
+#resources p {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#resources p:last-child {
+  margin: 0 2em;
+}
+
+#resource-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  background: url("../images/sky-large.jpg") no-repeat;
+
+  margin: 2em 0;
+  padding: 2.5em 0 0;
+
+  border: 0.05em solid var(--light-grey);
+}
+
+.resource-card {
+  height: 14em;
+}
+
+.text-wrapper {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+  height: 60%;
+  padding: 1em;
+
+  background-color: var(--grey-transparent);
+
+  text-align: center;
+}
+
+.resource-card a,
+.resource-card p {
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+}
+
+.resource-card a {
+  grid-row: 2;
+}
+
+#resources .resource-card .text-wrapper p {
+  font-size: 0.9em;
+  grid-row: 3;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2em 2fr 1fr;
+
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+footer p {
+  grid-column: 2;
+
+  letter-spacing: 0.01em;
+  line-height: 1.3em;
+
+  text-align: left;
+}
+
+footer a {
+  grid-column: 3;
+  text-align: right;
+
+  margin-right: 1em;
+}
+
+footer p a {
+  margin-right: 0;
+}
+footer span {
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+footer span:hover {
+  font-weight: bold;
+}
+
+/* Thank you modal  */
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 3em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0.3em;
+  background-color: var(--blue);
+  padding: 1.8em 4em 4em 4em;
+  width: 60%;
+  font-size: 0.6em;
+  margin: auto;
+}
+.closing {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+.modal-content h2 {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.modal-content h3 {
+  width: 100%;
+  text-align: left;
+}
+
+.modal-content p {
+  text-align: left;
+  line-height: 1.8em;
+  margin: 1em 0em;
+  width: 100%;
+  letter-spacing: 0.1em;
+}
+
+.modal-content a {
+  text-decoration: none;
+  font-size: 1em;
+  font-style: italic;
+  color: var(--white);
+}
+
+.modal-content a:hover {
+  font-weight: bold;
+}
+.close {
+  width: 50%;
+  color: var(--white);
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .cloud-row {
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
 }
 
 .lg-cloud,
@@ -418,6 +581,42 @@ h2 {
     width: 75%;
   }
 
+  #resource-wrapper {
+    background: none;
+    border: none;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  .resource-card {
+    background: url("../images/sky.jpg") no-repeat;
+    margin: 1em;
+    padding: 1em;
+
+    width: 23em;
+
+    border: 0.05em solid var(--light-grey);
+  }
+
+  .text-wrapper {
+    height: 80%;
+  }
+
+  footer {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  footer a {
+    margin-right: 2em;
+  }
+  .modal-content {
+    margin: auto;
+  }
+
   .sm-cloud {
     background: radial-gradient(
         4.5em 4.5em at 50% 50%,
@@ -485,7 +684,7 @@ h2 {
     font-size: 1.3em;
   }
 
-  #sleep-benefits h2 {
+  h2 {
     font-size: 1.8em;
   }
 
@@ -501,20 +700,13 @@ h2 {
   .sleep-benefits__list summary {
     line-height: 1.4em;
   }
-  .side-effects-intro h2,
-  #improve-sleep-quality h2 {
-    font-size: 1.8em;
-  }
   .side-effects-intro {
     padding: 2em 2em 1em 2em;
     text-align: center;
     align-self: center;
   }
   .side-effects,
-  .side-effects-intro p,
-  .improve-sleep-quality h3,
-  .improve-sleep-quality h4,
-  .improve-sleep-quality p{
+  .side-effects-intro p {
     font-size: 1.2em;
   }
 
@@ -546,6 +738,33 @@ h2 {
   #calculator form #button-container .calculator-button {
     height: 3em;
     font-size: 1em;
+  }
+
+  #resources p {
+    font-size: 1.3em;
+  }
+
+  #resource-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .resource-card {
+    width: 16em;
+  }
+
+  footer {
+    margin: 1em 5em 3em 0;
+    padding: 1em;
+  }
+
+  footer a {
+    margin-right: 0;
+  }
+  .modal-content {
+    margin: auto;
+    font-size: 0.8em;
   }
 
   .sm-cloud {
@@ -673,8 +892,7 @@ h2 {
   }
 
   .side-effects,
-  .side-effects-intro p,
-  .improve-sleep-quality p {
+  .side-effects-intro p {
     font-size: 1.2em;
   }
   .side-effects-intro {
@@ -734,6 +952,19 @@ h2 {
     height: 4em;
   }
 
+  .resource-card {
+    width: 18em;
+  }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal-content {
+    margin: auto;
+    font-size: 0.8em;
+  }
+
   .sm-cloud {
     background: radial-gradient(
         5em 5em at 50% 50%,
@@ -789,4 +1020,7 @@ h2 {
     width: 15em;
     height: 15em;
   }
+}
+.calculate_sleep_button {
+  padding-bottom: 2rem;
 }
