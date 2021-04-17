@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
   --blue: #195886;
@@ -25,7 +25,7 @@ html {
 body {
   color: var(--white);
   background-color: var(--blue);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 
   width: 100%;
@@ -70,12 +70,12 @@ a {
 
 .calculate_score_button {
   margin: auto;
-  text-decoration:none;
-  background-color:var(--white);
-  color:var(--black);
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--black);
   padding: 1em;
   font-size: 1em;
-  font-weight:00;
+  font-weight: 00;
   border-radius: 0.5em;
   transition: background-color 0.5s ease;
 }
@@ -149,6 +149,13 @@ a {
   justify-content: center;
   align-content: center;
   margin-top: 1em;
+
+  /* width: 90%; */
+}
+
+.side-effects-intro h2,
+#improve-sleep-quality h2 {
+  font-size: 1.5em;
 }
 
 .side-effects-intro {
@@ -156,7 +163,8 @@ a {
   width: 80%;
 }
 
-.side-effects-intro p {
+.side-effects-intro p,
+.improve-sleep-quality p {
   font-size: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -174,7 +182,8 @@ a {
   display: grid;
   grid-template-rows: 1fr;
 }
-.grid-item {
+.grid-item,
+.top-tips-item {
   color: var(--white);
   padding: 1rem;
   height: auto;
@@ -190,12 +199,33 @@ a {
   height: auto;
 }
 
-#sleep-score {
+.top-tips-item {
+  padding: 1em 0;
+}
+
+#sleep-score,
+#improve-sleep-quality {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin: 0 2em 2em;
+}
+
+.improve-sleep-quality {
+  position: relative;
+  color: var(--white);
+
+  margin: 1.5em 0;
+  padding: 1em 2em;
+
+  border: 0.15em solid var(--grey);
+  border-radius: 0.75em;
+
+  width: 65%;
+}
+
+.improve-sleep-quality h3 {
+  padding: 1em 0;
 }
 
 #calculator-wrapper {
@@ -288,7 +318,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  background: url('../images/sky-large.jpg') no-repeat;
+  background: url("../images/sky-large.jpg") no-repeat;
 
   margin: 2em 0;
   padding: 2.5em 0 0;
@@ -354,88 +384,88 @@ footer a {
 footer p a {
   margin-right: 0;
 }
-footer span{
-display:inline-block;
-margin:1em;
-cursor:pointer;
-text-decoration-line: underline;
+footer span {
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+  text-decoration-line: underline;
 }
-footer span:hover{
-font-weight:bold;
-
+footer span:hover {
+  font-weight: bold;
 }
 
 /* Thank you modal  */
 
 .modal {
   display: none;
-  position: fixed; 
-  padding-top:3em;
-  left: 0; 
+  position: fixed;
+  padding-top: 3em;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow:auto;
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.6); 
-
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .modal-content {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  border-radius:0.3em;
-  background-color:var(--blue);
-  padding: 1.7em;   
-  width:50%;
-  font-size:0.8em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0.3em;
+  background-color: var(--blue);
+  padding: 1.8em 4em 4em 4em;
+  width: 60%;
+  font-size: 0.6em;
+  margin: auto;
 }
-.modal-content h2{
-  width:100%;
-  text-align:center;
-margin-bottom:1em;
-  
+.closing {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
 }
-.modal-content h3{
-width:100%;
-text-align:left;
+.modal-content h2 {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 1em;
 }
-.modal-content span{
-  width:100%;
-  margin-left:94%;
-  
+.modal-content h3 {
+  width: 100%;
+  text-align: left;
 }
-.modal-content p{
-text-align:left;
-  margin:1em 0em;
-  width:100%;
+
+.modal-content p {
+  text-align: left;
+  line-height: 1.8em;
+  margin: 1em 0em;
+  width: 100%;
   letter-spacing: 0.1em;
 }
 
-.modal-content a{
-  text-decoration:none;
-  font-size:1em;
-  font-style:italic;  
-  color:var(--white);
+.modal-content a {
+  text-decoration: none;
+  font-size: 1em;
+  font-style: italic;
+  color: var(--white);
 }
 
-.modal-content a:hover{
-font-weight:bold;
+.modal-content a:hover {
+  font-weight: bold;
 }
-
-
 .close {
-  width:50%;
-  color: var(--white); 
-  font-size: 2em;  
+  width: 50%;
+  color: var(--white);
+  font-size: 2em;
   font-weight: bold;
   cursor: pointer;
 }
 
-
 .cloud-row {
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
 }
 
 .lg-cloud,
@@ -511,9 +541,8 @@ font-weight:bold;
   #calculator-wrapper {
     height: 25em;
   }
-  
-}
 
+}
 
 @media screen and (min-width: 43em) {
   #sleep-benefits {
@@ -560,7 +589,7 @@ font-weight:bold;
   }
 
   .resource-card {
-    background: url('../images/sky.jpg') no-repeat;
+    background: url("../images/sky.jpg") no-repeat;
     margin: 1em;
     padding: 1em;
 
@@ -584,10 +613,9 @@ font-weight:bold;
   footer a {
     margin-right: 2em;
   }
-  .modal-content{
-  margin: auto; 
+  .modal-content {
+    margin: auto;
   }
-
 
   .sm-cloud {
     background: radial-gradient(
@@ -652,8 +680,7 @@ font-weight:bold;
   .sleep-benefits__introduction p,
   #calculator p,
   #calculator form,
-  .sleep-benefits__list details,
-  small {
+  .sleep-benefits__list details {
     font-size: 1.3em;
   }
 
@@ -673,14 +700,16 @@ font-weight:bold;
   .sleep-benefits__list summary {
     line-height: 1.4em;
   }
-
   .side-effects-intro {
     padding: 2em 2em 1em 2em;
     text-align: center;
     align-self: center;
   }
   .side-effects,
-  .side-effects-intro p {
+  .side-effects-intro p,
+  .improve-sleep-quality h3,
+  .improve-sleep-quality h4,
+  .improve-sleep-quality p {
     font-size: 1.2em;
   }
 
@@ -732,8 +761,9 @@ font-weight:bold;
   footer a {
     margin-right: 0;
   }
-  .modal-content{
-    margin: auto; 
+  .modal-content {
+    margin: auto;
+    font-size: 0.8em;
   }
 
   .sm-cloud {
@@ -790,6 +820,18 @@ font-weight:bold;
       );
     width: 15em;
     height: 15em;
+  }
+
+  .top-tips-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+
+  .top-tips-item {
+    padding: 20px;
+    font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -849,7 +891,8 @@ font-weight:bold;
   }
 
   .side-effects,
-  .side-effects-intro p {
+  .side-effects-intro p,
+  .improve-sleep-quality p {
     font-size: 1.2em;
   }
   .side-effects-intro {
@@ -910,9 +953,10 @@ font-weight:bold;
   footer {
     grid-template-columns: repeat(3, 1fr);
   }
-  
-  .modal-content{
-  margin: auto; 
+
+  .modal-content {
+    margin: auto;
+    font-size: 0.8em;
   }
 
   .sm-cloud {
@@ -970,4 +1014,7 @@ font-weight:bold;
     width: 15em;
     height: 15em;
   }
+}
+.calculate_sleep_button {
+  padding-bottom: 2rem;
 }
