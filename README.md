@@ -15,11 +15,11 @@ At the moment we're using a discord server. As we grow I'd like to switch to a d
 
 ## Tickets:
 You can find all available tickets on our Jira board
-(to access Trello you must be a member on Discord and WONDR).
+(to access Jira you must be a member on Discord and WONDR).
 
 ## Communication: 
 On project's channel within our Discord group
 (see the link above).
 
-##Chapter Lead:
-Our chapter leads for this project are Denice and Cendei.
+## Chapter Lead:
+Our chapter lead for this project is Lizard.
