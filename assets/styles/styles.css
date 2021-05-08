@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
   --blue: #195886;
@@ -12,6 +13,7 @@
   --white-transparent: rgba(245, 245, 245, 0);
   --black: #171717;
 }
+
 
 * {
   margin: 0;
@@ -195,8 +197,10 @@ a {
   font-size: 1em;
 }
 .grid-item img {
-  width: 100%;
-  height: auto;
+  height: 12.5em;
+  width: 12.5em;
+  border: 0.25em var(--white) solid;
+  border-radius: 100%;
 }
 
 .top-tips-item {
@@ -904,8 +908,10 @@ footer span:hover {
     text-align: center;
   }
   .grid-item img {
-    height: auto;
-    width: auto;
+    height: 25em;
+    width: 25em;
+    border: 0.25em var(--white) solid;
+    border-radius: 100%;
   }
 
   .grid-container {
@@ -922,11 +928,12 @@ footer span:hover {
     gap: 0.5em 0.5em;
     position: relative;
   }
-  #col-2-row-3-item-2 {
+  #col-3-row-3-item-3 {
     justify-self: center;
     align-self: center;
     text-align: center;
-    grid-column: auto / span 2;
+    grid-column: 3/ span 1;
+    
   }
   #sleep-score {
     margin: 0 0 2em;
