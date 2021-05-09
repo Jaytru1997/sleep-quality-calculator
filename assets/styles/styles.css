@@ -733,6 +733,10 @@ footer span:hover {
     font-size: 1.2em;
     padding: 1.5em;
   }
+  
+  #col-2-row-3-item-2{
+    grid-column: 3/ span 1;
+  }
   #calculator-wrapper {
     height: 25em;
   }
