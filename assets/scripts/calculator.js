@@ -165,6 +165,7 @@ function setAnswers(answerList) {
     radioInput.setAttribute('type', 'radio');
     radioInput.setAttribute('name', 'answer-group');
     radioInput.setAttribute('value', answerValue);
+    radioInput.id = answer;
     radioInput.classList.add('answer');
 
     radioInput.addEventListener('input', () =>
