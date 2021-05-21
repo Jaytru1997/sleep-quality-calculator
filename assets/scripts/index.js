@@ -13,3 +13,18 @@ window.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
+
+// Load the moon image responsively
+const mobileWidth = 450;
+var userScreenWidth = window.innerWidth;
+
+const mobileImgSrc = './assets/images/moon-small.jpeg';
+const desktopImgSrc = './assets/images/moon.jfif';
+
+var img = document.querySelector('.responsive-img');
+
+if (userScreenWidth < mobileWidth) {
+  img.src = mobileImgSrc;
+} else {
+  img.src = desktopImgSrc;
+}

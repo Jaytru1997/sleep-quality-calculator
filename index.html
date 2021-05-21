@@ -11,8 +11,12 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="./assets/styles/styles.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+  <link rel="preload" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" as="style" onload="this.onload==null;this.rel='stylesheet'"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+  <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" /></noscript>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Sleep Quality Calculator</title>
 </head>
@@ -73,7 +77,7 @@
       <div class="cloud-row"></div>
       <article id="sleep-benefits">
         <div class="sleep-benefits__image">
-          <img src="./assets/images/moon.jfif" alt="A lit moon on a dark night sky filled with bright stars" />
+          <img src="" alt="A lit moon on a dark night sky filled with bright stars" class="responsive-img" />
         </div>
         <div class="sleep-benefits__introduction">
           <h2>Benefits of good sleep quality</h2>
