@@ -46,6 +46,7 @@ buttonContainer.appendChild(backButton);
 const submit = document.createElement('input');
 submit.setAttribute('type', 'submit');
 submit.setAttribute('disabled', 'disabled');
+submit.textContent = 'Submit';
 submit.classList.add('calculator-button');
 
 submit.addEventListener('click', (event) => {

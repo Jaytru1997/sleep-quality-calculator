@@ -856,12 +856,12 @@ footer p a {
   .top-tips-grid {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 10px;
+    padding: 0.625em;
   }
 
   .top-tips-item {
-    padding: 20px;
-    font-size: 16px;
+    padding: 1.25em;
+    font-size: 1em;
     text-align: left;
   }
 }
