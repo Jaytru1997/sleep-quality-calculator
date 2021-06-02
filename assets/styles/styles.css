@@ -46,8 +46,9 @@ a {
 
 .introduction {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   font-size: 1em;
   letter-spacing: 0.1em;
   margin: 1.8em 2em;
@@ -836,6 +837,9 @@ font-weight:bold;
   }
   .introduction h1 {
     margin-bottom: 1.5em;
+  }
+  .introduction p {
+    width: 60%;
   }
 
   #sleep-benefits {
